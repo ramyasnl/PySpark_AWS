@@ -2,7 +2,6 @@
 ETL and analysis of Amazon Vine reviews with AWS, postgresql, PySpark, and Google Colab</b> 
 # <b>About this Project</b> 
 In this project, we have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products.</br> We need to pick one of these datasets from S3 and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data through pgAdmin. </br>Next, We’ll use PySpark to determine if there is any bias toward favorable reviews from Vine members in our dataset. Then, We’ll write a summary of the analysis for Jennifer to submit to the SellBy stakeholders.</br>
-BLOCK DIAGRAM </br>
 
 # <b>Results</b> </br>
 # Amazon_Reviews_ETL </br>
@@ -16,30 +15,37 @@ BLOCK DIAGRAM </br>
 
 #review_id_table</br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/review_id_table.png) </br>
+
 #vine_table </br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/vinetable.png) </br>
-LINK TO CUSTOMER TAB </br>
+
+
 # <b>Summary</b>
 # Vine Review Analysis 
 We started cleaning up the dataframe ,then we filtered our data frames that had at least 20+ votes and at least 50% of helpful votes, then filtered by those that had and did not had a vine review. Summary statistics showed that there could be biased among "Star Ratings" given the quantities of "vine" and "non-vine" reviews. There were about 65,000 records that did not have vine reviews, and only 600 records that did have vine reviews. Next, we calculated the percentage of 5-star ratings for both groups. 36% of Amazon reviews that were part of the vine program gave a 5-star rating.</br>
-#vine DF </br>
+
+# Paid Vine DF </br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/vinedf.png) </br>
 
-#Paid Vine Review</br>
-
+# Paid Vine Review</br>
 Total_paid_number:</br>
 613</br>
 Paid_five_star_number:</br>
 222</br>
 Percentage_five_star_vine:</br>
 0.3621533442088091</br>
-#Non Vine Revew</br>
+
+# Non Vine Revew</br>
+![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/nonvine.png) </br>
+
+# Non Vine Revew</br>
 Total_Non Vine_number:</br>
 64934</br>
 Non Vine_five_star_number:</br>
 30530</br>
 Percentage_five_star_Non Vine:</br>
 0.47016971078325687
+
 # <b>Conclusion</b></br>
 36% of records that were part of the Vine program(paid) gave a 5-star rating.</br>
 47% of records that were not part of the Non Vine program(unpaid) also gave a 5-star rating.</br>
