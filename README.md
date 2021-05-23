@@ -10,21 +10,23 @@ BLOCK DIAGRAM </br>
 * We’ll create an AWS RDS database with tables in pgAdmin, use the dataset from the Amazon Review datasets and extract the dataset into a DataFrame</br>
 * Next,we transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. </br>
 * Then, we'll upload the transformed data into the appropriate tables and run  queries in pgAdmin to confirm that the data has been uploaded.</br>
+
 #customers_table  </br>
-LINK TO CUSTOMER TAB </br>
-#products_table</br>
-LINK TO CUSTOMER TAB </br>
+![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/customertable.png) </br>
+
 #review_id_table</br>
-LINK TO CUSTOMER TAB </br>
+![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/review_id_table.png) </br>
 #vine_table </br>
+![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/vinetable.png) </br>
 LINK TO CUSTOMER TAB </br>
 # <b>Summary</b>
 # Vine Review Analysis 
 We started cleaning up the dataframe ,then we filtered our data frames that had at least 20+ votes and at least 50% of helpful votes, then filtered by those that had and did not had a vine review. Summary statistics showed that there could be biased among "Star Ratings" given the quantities of "vine" and "non-vine" reviews. There were about 65,000 records that did not have vine reviews, and only 600 records that did have vine reviews. Next, we calculated the percentage of 5-star ratings for both groups. 36% of Amazon reviews that were part of the vine program gave a 5-star rating.</br>
-LINK TO vine DF </br>
-LINK TO paidvine DF </br>
-LINK TO Nonvine DF </br>
+#vine DF </br>
+![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/vinedf.png) </br>
+
 #Paid Vine Review</br>
+
 Total_paid_number:</br>
 613</br>
 Paid_five_star_number:</br>
