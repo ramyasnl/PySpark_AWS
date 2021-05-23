@@ -10,13 +10,13 @@ In this project, we have access to approximately 50 datasets. Each one contains 
 * Next,we transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. </br>
 * Then, we'll upload the transformed data into the appropriate tables and run  queries in pgAdmin to confirm that the data has been uploaded.</br>
 
-#customers_table  </br>
+# customers_table  </br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/customertable.png) </br>
 
-#review_id_table</br>
+# review_id_table</br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/review_id_table.png) </br>
 
-#vine_table </br>
+# vine_table </br>
 ![alt text](https://github.com/ramyasnl/PySpark_Challenge/blob/main/Images/vinetable.png) </br>
 
 
