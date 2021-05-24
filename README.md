@@ -49,4 +49,4 @@ Percentage_five_star_Non Vine:</br>
 # Conclusion </b></br>
 36% of records that were part of the Vine program(paid) gave a 5-star rating.</br>
 47% of records that were not part of the Non Vine program(unpaid) also gave a 5-star rating.</br>
-There were significantly less records that had Vine than those records that did not had Vine,so there is possibility of bias in the Vine/Star-Rating reviews.
+There were significantly less records that had Vine than those records that did not had Vine,so there is less possibility of bias in the Vine/Star-Rating reviews.
